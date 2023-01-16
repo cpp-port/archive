@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Assembler Files">
+      <UniqueIdentifier>{c6fc5d5c-8a8b-4552-ac6d-9689b8afa14c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assembler Files\x86">
+      <UniqueIdentifier>{0cc2a38a-b7aa-4e31-bf18-d15124707603}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assembler Files\x64">
+      <UniqueIdentifier>{2699fb70-125a-4c7a-ad4d-002b4b04b764}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\tar">
+      <UniqueIdentifier>{91b3a8dc-0a98-490d-ae65-a3dba29e2d17}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="crc32.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="deflate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gzguts.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inffast.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inffixed.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inflate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inftrees.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="trees.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="contrib\masmx86\inffas32.asm">
+      <Filter>Assembler Files\x86</Filter>
+    </CustomBuild>
+    <CustomBuild Include="contrib\masmx86\match686.asm">
+      <Filter>Assembler Files\x86</Filter>
+    </CustomBuild>
+    <CustomBuild Include="contrib\masmx64\gvmat64.asm">
+      <Filter>Assembler Files\x64</Filter>
+    </CustomBuild>
+    <CustomBuild Include="contrib\masmx64\inffasx64.asm">
+      <Filter>Assembler Files\x64</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="libarchive\tar\bsdtar.c">
+      <Filter>Source Files\tar</Filter>
+    </ClCompile>
+    <ClCompile Include="libarchive\tar\bsdtar_windows.c">
+      <Filter>Source Files\tar</Filter>
+    </ClCompile>
+    <ClCompile Include="libarchive\tar\cmdline.c">
+      <Filter>Source Files\tar</Filter>
+    </ClCompile>
+    <ClCompile Include="libarchive\tar\creation_set.c">
+      <Filter>Source Files\tar</Filter>
+    </ClCompile>
+    <ClCompile Include="libarchive\tar\read.c">
+      <Filter>Source Files\tar</Filter>
+    </ClCompile>
+    <ClCompile Include="libarchive\tar\subst.c">
+      <Filter>Source Files\tar</Filter>
+    </ClCompile>
+    <ClCompile Include="libarchive\tar\util.c">
+      <Filter>Source Files\tar</Filter>
+    </ClCompile>
+    <ClCompile Include="libarchive\tar\write.c">
+      <Filter>Source Files\tar</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
