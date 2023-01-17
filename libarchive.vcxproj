@@ -195,7 +195,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>ZLIB_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>HAVE_CONFIG_H;__LIBARCHIVE_BUILD;ZLIB_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>include;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__operating_system)third-windows/$(PlatformName)/$(Configuration)/include;$(__operating_system)third-windows/include;$(__operating_system)third-windows/third/include;$(__operating_system)third-windows/third/include/include;$(SolutionDir)../../../operating-system/operating-system-windows/_include;$(SolutionDir)../../../operating-system/operating-system-windows;$(SolutionDir)../../../operating-system/operating-system-windows_common;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/port/include;$(SolutionDir)../../../source/port;.;$(IntDir);$(SolutionDir)../../../;$(SolutionDir)../../../source;$(SolutionDir)../../../source/app;$(ProjectDir)../..;$(ProjectDir)../../;$(ProjectDir)../;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <CompileAsManaged>false</CompileAsManaged>
@@ -252,7 +252,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>HAVE_CONFIG_H;__LIBARCHIVE_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>include;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__operating_system)third-windows/$(PlatformName)/$(Configuration)/include;$(__operating_system)third-windows/include;$(__operating_system)third-windows/third/include;$(__operating_system)third-windows/third/include/include;$(SolutionDir)../../../operating-system/operating-system-windows/_include;$(SolutionDir)../../../operating-system/operating-system-windows;$(SolutionDir)../../../operating-system/operating-system-windows_common;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/port/include;$(SolutionDir)../../../source/port;.;$(IntDir);$(SolutionDir)../../../;$(SolutionDir)../../../source;$(SolutionDir)../../../source/app;$(ProjectDir)../..;$(ProjectDir)../../;$(ProjectDir)../;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <CompileAsManaged>false</CompileAsManaged>
@@ -310,7 +310,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Full</Optimization>
-      <PreprocessorDefinitions>ZLIB_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>HAVE_CONFIG_H;__LIBARCHIVE_BUILD;ZLIB_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>include;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__operating_system)third-windows/$(PlatformName)/$(Configuration)/include;$(__operating_system)third-windows/include;$(__operating_system)third-windows/third/include;$(__operating_system)third-windows/third/include/include;$(SolutionDir)../../../operating-system/operating-system-windows/_include;$(SolutionDir)../../../operating-system/operating-system-windows;$(SolutionDir)../../../operating-system/operating-system-windows_common;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/port/include;$(SolutionDir)../../../source/port;.;$(IntDir);$(SolutionDir)../../../;$(SolutionDir)../../../source;$(SolutionDir)../../../source/app;$(ProjectDir)../..;$(ProjectDir)../../;$(ProjectDir)../;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <CompileAsManaged>false</CompileAsManaged>
@@ -371,7 +371,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>MinSpace</Optimization>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>HAVE_CONFIG_H;__LIBARCHIVE_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>include;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__operating_system)third-windows/$(PlatformName)/$(Configuration)/include;$(__operating_system)third-windows/include;$(__operating_system)third-windows/third/include;$(__operating_system)third-windows/third/include/include;$(SolutionDir)../../../operating-system/operating-system-windows/_include;$(SolutionDir)../../../operating-system/operating-system-windows;$(SolutionDir)../../../operating-system/operating-system-windows_common;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/port/include;$(SolutionDir)../../../source/port;.;$(IntDir);$(SolutionDir)../../../;$(SolutionDir)../../../source;$(SolutionDir)../../../source/app;$(ProjectDir)../..;$(ProjectDir)../../;$(ProjectDir)../;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <CompileAsManaged>false</CompileAsManaged>
@@ -437,8 +437,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>ZLIB_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>include;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__operating_system)third-windows/$(PlatformName)/$(Configuration)/include;$(__operating_system)third-windows/include;$(__operating_system)third-windows/third/include;$(__operating_system)third-windows/third/include/include;$(SolutionDir)../../../operating-system/operating-system-windows/_include;$(SolutionDir)../../../operating-system/operating-system-windows;$(SolutionDir)../../../operating-system/operating-system-windows_common;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/port/include;$(SolutionDir)../../../source/port;.;$(IntDir);$(SolutionDir)../../../;$(SolutionDir)../../../source;$(SolutionDir)../../../source/app;$(ProjectDir)../..;$(ProjectDir)../../;$(ProjectDir)../;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>HAVE_CONFIG_H;__LIBARCHIVE_BUILD;ZLIB_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <CompileAsManaged>false</CompileAsManaged>
       <CompileAsWinRT>false</CompileAsWinRT>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
@@ -472,7 +471,8 @@
       <AdditionalLibraryDirectories>$(OutDir);$(SolutionDir)..\..\..\..\operating-system\storage-windows\$(PlatformName)\$(Configuration)\third\library\;$(SolutionDir)..\..\..\..\operating-system\storage-windows\$(PlatformName)\$(Configuration)\library\;$(SolutionDir)..\..\..\time\$(PlatformName)\$(Configuration)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ModuleDefinitionFile>./$(ProjectName).def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
       <ImportLibrary>$(SolutionDir)..\..\..\..\operating-system\storage-windows\$(PlatformName)\$(Configuration)\third\library\$(TargetName).lib</ImportLibrary>
       <ImageHasSafeExceptionHandlers>
       </ImageHasSafeExceptionHandlers>
@@ -495,8 +495,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>include;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__operating_system)third-windows/$(PlatformName)/$(Configuration)/include;$(__operating_system)third-windows/include;$(__operating_system)third-windows/third/include;$(__operating_system)third-windows/third/include/include;$(SolutionDir)../../../operating-system/operating-system-windows/_include;$(SolutionDir)../../../operating-system/operating-system-windows;$(SolutionDir)../../../operating-system/operating-system-windows_common;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/port/include;$(SolutionDir)../../../source/port;.;$(IntDir);$(SolutionDir)../../../;$(SolutionDir)../../../source;$(SolutionDir)../../../source/app;$(ProjectDir)../..;$(ProjectDir)../../;$(ProjectDir)../;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>HAVE_CONFIG_H;__LIBARCHIVE_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <CompileAsManaged>false</CompileAsManaged>
       <CompileAsWinRT>false</CompileAsWinRT>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
@@ -554,8 +553,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Full</Optimization>
-      <PreprocessorDefinitions>ZLIB_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>include;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__operating_system)third-windows/$(PlatformName)/$(Configuration)/include;$(__operating_system)third-windows/include;$(__operating_system)third-windows/third/include;$(__operating_system)third-windows/third/include/include;$(SolutionDir)../../../operating-system/operating-system-windows/_include;$(SolutionDir)../../../operating-system/operating-system-windows;$(SolutionDir)../../../operating-system/operating-system-windows_common;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/port/include;$(SolutionDir)../../../source/port;.;$(IntDir);$(SolutionDir)../../../;$(SolutionDir)../../../source;$(SolutionDir)../../../source/app;$(ProjectDir)../..;$(ProjectDir)../../;$(ProjectDir)../;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>HAVE_CONFIG_H;__LIBARCHIVE_BUILD;ZLIB_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <CompileAsManaged>false</CompileAsManaged>
       <CompileAsWinRT>false</CompileAsWinRT>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
@@ -613,8 +611,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>MinSpace</Optimization>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>include;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__operating_system)third-windows/$(PlatformName)/$(Configuration)/include;$(__operating_system)third-windows/include;$(__operating_system)third-windows/third/include;$(__operating_system)third-windows/third/include/include;$(SolutionDir)../../../operating-system/operating-system-windows/_include;$(SolutionDir)../../../operating-system/operating-system-windows;$(SolutionDir)../../../operating-system/operating-system-windows_common;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/port/include;$(SolutionDir)../../../source/port;.;$(IntDir);$(SolutionDir)../../../;$(SolutionDir)../../../source;$(SolutionDir)../../../source/app;$(ProjectDir)../..;$(ProjectDir)../../;$(ProjectDir)../;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>HAVE_CONFIG_H;__LIBARCHIVE_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <CompileAsManaged>false</CompileAsManaged>
       <CompileAsWinRT>false</CompileAsWinRT>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
@@ -671,16 +668,6 @@
       <SubSystem>Windows</SubSystem>
     </Lib>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClInclude Include="crc32.h" />
-    <ClInclude Include="deflate.h" />
-    <ClInclude Include="gzguts.h" />
-    <ClInclude Include="inffast.h" />
-    <ClInclude Include="inffixed.h" />
-    <ClInclude Include="inflate.h" />
-    <ClInclude Include="inftrees.h" />
-    <ClInclude Include="trees.h" />
-  </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="contrib\masmx64\gvmat64.asm">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
@@ -792,6 +779,140 @@
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="libarchive\libarchive\archive_acl.c" />
+    <ClCompile Include="libarchive\libarchive\archive_blake2sp_ref.c" />
+    <ClCompile Include="libarchive\libarchive\archive_blake2s_ref.c" />
+    <ClCompile Include="libarchive\libarchive\archive_check_magic.c" />
+    <ClCompile Include="libarchive\libarchive\archive_cmdline.c" />
+    <ClCompile Include="libarchive\libarchive\archive_cryptor.c" />
+    <ClCompile Include="libarchive\libarchive\archive_digest.c" />
+    <ClCompile Include="libarchive\libarchive\archive_disk_acl_darwin.c" />
+    <ClCompile Include="libarchive\libarchive\archive_disk_acl_freebsd.c" />
+    <ClCompile Include="libarchive\libarchive\archive_disk_acl_linux.c" />
+    <ClCompile Include="libarchive\libarchive\archive_disk_acl_sunos.c" />
+    <ClCompile Include="libarchive\libarchive\archive_entry.c" />
+    <ClCompile Include="libarchive\libarchive\archive_entry_copy_bhfi.c" />
+    <ClCompile Include="libarchive\libarchive\archive_entry_copy_stat.c" />
+    <ClCompile Include="libarchive\libarchive\archive_entry_link_resolver.c" />
+    <ClCompile Include="libarchive\libarchive\archive_entry_sparse.c" />
+    <ClCompile Include="libarchive\libarchive\archive_entry_stat.c" />
+    <ClCompile Include="libarchive\libarchive\archive_entry_strmode.c" />
+    <ClCompile Include="libarchive\libarchive\archive_entry_xattr.c" />
+    <ClCompile Include="libarchive\libarchive\archive_getdate.c" />
+    <ClCompile Include="libarchive\libarchive\archive_hmac.c" />
+    <ClCompile Include="libarchive\libarchive\archive_match.c" />
+    <ClCompile Include="libarchive\libarchive\archive_options.c" />
+    <ClCompile Include="libarchive\libarchive\archive_pack_dev.c" />
+    <ClCompile Include="libarchive\libarchive\archive_pathmatch.c" />
+    <ClCompile Include="libarchive\libarchive\archive_ppmd7.c" />
+    <ClCompile Include="libarchive\libarchive\archive_ppmd8.c" />
+    <ClCompile Include="libarchive\libarchive\archive_random.c" />
+    <ClCompile Include="libarchive\libarchive\archive_rb.c" />
+    <ClCompile Include="libarchive\libarchive\archive_read.c" />
+    <ClCompile Include="libarchive\libarchive\archive_read_add_passphrase.c" />
+    <ClCompile Include="libarchive\libarchive\archive_read_append_filter.c" />
+    <ClCompile Include="libarchive\libarchive\archive_read_data_into_fd.c" />
+    <ClCompile Include="libarchive\libarchive\archive_read_disk_entry_from_file.c" />
+    <ClCompile Include="libarchive\libarchive\archive_read_disk_posix.c" />
+    <ClCompile Include="libarchive\libarchive\archive_read_disk_set_standard_lookup.c" />
+    <ClCompile Include="libarchive\libarchive\archive_read_disk_windows.c" />
+    <ClCompile Include="libarchive\libarchive\archive_read_extract.c" />
+    <ClCompile Include="libarchive\libarchive\archive_read_extract2.c" />
+    <ClCompile Include="libarchive\libarchive\archive_read_open_fd.c" />
+    <ClCompile Include="libarchive\libarchive\archive_read_open_file.c" />
+    <ClCompile Include="libarchive\libarchive\archive_read_open_filename.c" />
+    <ClCompile Include="libarchive\libarchive\archive_read_open_memory.c" />
+    <ClCompile Include="libarchive\libarchive\archive_read_set_format.c" />
+    <ClCompile Include="libarchive\libarchive\archive_read_set_options.c" />
+    <ClCompile Include="libarchive\libarchive\archive_read_support_filter_all.c" />
+    <ClCompile Include="libarchive\libarchive\archive_read_support_filter_by_code.c" />
+    <ClCompile Include="libarchive\libarchive\archive_read_support_filter_bzip2.c" />
+    <ClCompile Include="libarchive\libarchive\archive_read_support_filter_compress.c" />
+    <ClCompile Include="libarchive\libarchive\archive_read_support_filter_grzip.c" />
+    <ClCompile Include="libarchive\libarchive\archive_read_support_filter_gzip.c" />
+    <ClCompile Include="libarchive\libarchive\archive_read_support_filter_lrzip.c" />
+    <ClCompile Include="libarchive\libarchive\archive_read_support_filter_lz4.c" />
+    <ClCompile Include="libarchive\libarchive\archive_read_support_filter_lzop.c" />
+    <ClCompile Include="libarchive\libarchive\archive_read_support_filter_none.c" />
+    <ClCompile Include="libarchive\libarchive\archive_read_support_filter_program.c" />
+    <ClCompile Include="libarchive\libarchive\archive_read_support_filter_rpm.c" />
+    <ClCompile Include="libarchive\libarchive\archive_read_support_filter_uu.c" />
+    <ClCompile Include="libarchive\libarchive\archive_read_support_filter_xz.c" />
+    <ClCompile Include="libarchive\libarchive\archive_read_support_filter_zstd.c" />
+    <ClCompile Include="libarchive\libarchive\archive_read_support_format_7zip.c" />
+    <ClCompile Include="libarchive\libarchive\archive_read_support_format_all.c" />
+    <ClCompile Include="libarchive\libarchive\archive_read_support_format_ar.c" />
+    <ClCompile Include="libarchive\libarchive\archive_read_support_format_by_code.c" />
+    <ClCompile Include="libarchive\libarchive\archive_read_support_format_cab.c" />
+    <ClCompile Include="libarchive\libarchive\archive_read_support_format_cpio.c" />
+    <ClCompile Include="libarchive\libarchive\archive_read_support_format_empty.c" />
+    <ClCompile Include="libarchive\libarchive\archive_read_support_format_iso9660.c" />
+    <ClCompile Include="libarchive\libarchive\archive_read_support_format_lha.c" />
+    <ClCompile Include="libarchive\libarchive\archive_read_support_format_mtree.c" />
+    <ClCompile Include="libarchive\libarchive\archive_read_support_format_rar.c" />
+    <ClCompile Include="libarchive\libarchive\archive_read_support_format_rar5.c" />
+    <ClCompile Include="libarchive\libarchive\archive_read_support_format_raw.c" />
+    <ClCompile Include="libarchive\libarchive\archive_read_support_format_tar.c" />
+    <ClCompile Include="libarchive\libarchive\archive_read_support_format_warc.c" />
+    <ClCompile Include="libarchive\libarchive\archive_read_support_format_xar.c" />
+    <ClCompile Include="libarchive\libarchive\archive_read_support_format_zip.c" />
+    <ClCompile Include="libarchive\libarchive\archive_string.c" />
+    <ClCompile Include="libarchive\libarchive\archive_string_sprintf.c" />
+    <ClCompile Include="libarchive\libarchive\archive_util.c" />
+    <ClCompile Include="libarchive\libarchive\archive_version_details.c" />
+    <ClCompile Include="libarchive\libarchive\archive_virtual.c" />
+    <ClCompile Include="libarchive\libarchive\archive_windows.c" />
+    <ClCompile Include="libarchive\libarchive\archive_write.c" />
+    <ClCompile Include="libarchive\libarchive\archive_write_add_filter.c" />
+    <ClCompile Include="libarchive\libarchive\archive_write_add_filter_b64encode.c" />
+    <ClCompile Include="libarchive\libarchive\archive_write_add_filter_by_name.c" />
+    <ClCompile Include="libarchive\libarchive\archive_write_add_filter_bzip2.c" />
+    <ClCompile Include="libarchive\libarchive\archive_write_add_filter_compress.c" />
+    <ClCompile Include="libarchive\libarchive\archive_write_add_filter_grzip.c" />
+    <ClCompile Include="libarchive\libarchive\archive_write_add_filter_gzip.c" />
+    <ClCompile Include="libarchive\libarchive\archive_write_add_filter_lrzip.c" />
+    <ClCompile Include="libarchive\libarchive\archive_write_add_filter_lz4.c" />
+    <ClCompile Include="libarchive\libarchive\archive_write_add_filter_lzop.c" />
+    <ClCompile Include="libarchive\libarchive\archive_write_add_filter_none.c" />
+    <ClCompile Include="libarchive\libarchive\archive_write_add_filter_program.c" />
+    <ClCompile Include="libarchive\libarchive\archive_write_add_filter_uuencode.c" />
+    <ClCompile Include="libarchive\libarchive\archive_write_add_filter_xz.c" />
+    <ClCompile Include="libarchive\libarchive\archive_write_add_filter_zstd.c" />
+    <ClCompile Include="libarchive\libarchive\archive_write_disk_posix.c" />
+    <ClCompile Include="libarchive\libarchive\archive_write_disk_set_standard_lookup.c" />
+    <ClCompile Include="libarchive\libarchive\archive_write_disk_windows.c" />
+    <ClCompile Include="libarchive\libarchive\archive_write_open_fd.c" />
+    <ClCompile Include="libarchive\libarchive\archive_write_open_file.c" />
+    <ClCompile Include="libarchive\libarchive\archive_write_open_filename.c" />
+    <ClCompile Include="libarchive\libarchive\archive_write_open_memory.c" />
+    <ClCompile Include="libarchive\libarchive\archive_write_set_format.c" />
+    <ClCompile Include="libarchive\libarchive\archive_write_set_format_7zip.c" />
+    <ClCompile Include="libarchive\libarchive\archive_write_set_format_ar.c" />
+    <ClCompile Include="libarchive\libarchive\archive_write_set_format_by_name.c" />
+    <ClCompile Include="libarchive\libarchive\archive_write_set_format_cpio.c" />
+    <ClCompile Include="libarchive\libarchive\archive_write_set_format_cpio_binary.c" />
+    <ClCompile Include="libarchive\libarchive\archive_write_set_format_cpio_newc.c" />
+    <ClCompile Include="libarchive\libarchive\archive_write_set_format_cpio_odc.c" />
+    <ClCompile Include="libarchive\libarchive\archive_write_set_format_filter_by_ext.c" />
+    <ClCompile Include="libarchive\libarchive\archive_write_set_format_gnutar.c" />
+    <ClCompile Include="libarchive\libarchive\archive_write_set_format_iso9660.c" />
+    <ClCompile Include="libarchive\libarchive\archive_write_set_format_mtree.c" />
+    <ClCompile Include="libarchive\libarchive\archive_write_set_format_pax.c" />
+    <ClCompile Include="libarchive\libarchive\archive_write_set_format_raw.c" />
+    <ClCompile Include="libarchive\libarchive\archive_write_set_format_shar.c" />
+    <ClCompile Include="libarchive\libarchive\archive_write_set_format_ustar.c" />
+    <ClCompile Include="libarchive\libarchive\archive_write_set_format_v7tar.c" />
+    <ClCompile Include="libarchive\libarchive\archive_write_set_format_warc.c" />
+    <ClCompile Include="libarchive\libarchive\archive_write_set_format_xar.c" />
+    <ClCompile Include="libarchive\libarchive\archive_write_set_format_zip.c" />
+    <ClCompile Include="libarchive\libarchive\archive_write_set_options.c" />
+    <ClCompile Include="libarchive\libarchive\archive_write_set_passphrase.c" />
+    <ClCompile Include="libarchive\libarchive\filter_fork_posix.c" />
+    <ClCompile Include="libarchive\libarchive\filter_fork_windows.c" />
+    <ClCompile Include="libarchive\libarchive\xxhash.c" />
+    <ClCompile Include="libarchive\libarchive_fe\err.c" />
+    <ClCompile Include="libarchive\libarchive_fe\line_reader.c" />
+    <ClCompile Include="libarchive\libarchive_fe\passphrase.c" />
     <ClCompile Include="libarchive\tar\bsdtar.c" />
     <ClCompile Include="libarchive\tar\bsdtar_windows.c" />
     <ClCompile Include="libarchive\tar\cmdline.c" />
@@ -800,6 +921,9 @@
     <ClCompile Include="libarchive\tar\subst.c" />
     <ClCompile Include="libarchive\tar\util.c" />
     <ClCompile Include="libarchive\tar\write.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="config.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
