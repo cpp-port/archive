@@ -475,4 +475,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="libarchive.def">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
 </Project>
