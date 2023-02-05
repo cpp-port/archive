@@ -29,9 +29,6 @@
 #define	ARCHIVE_H_INCLUDED
 
 
-#ifdef STATIC_CUBE
-#define LIBARCHIVE_STATIC
-#endif
 
 /*
  * The version number is expressed as a single integer that makes it
