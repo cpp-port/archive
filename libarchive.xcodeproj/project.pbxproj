@@ -896,9 +896,9 @@
 					"$(WorkspaceDir)/operating_system",
 					"$(WorkspaceDir)/operating_system/operating_system-$(PLATFORM_MODIFIER)",
 					"$(WorkspaceDir)/operating_system/operating_system-$(PLATFORM_MODIFIER)/include",
-					"$(WorkspaceDir)/source/port/include/operating-system/$(PLATFORM_MODIFIER)",
+					"$(WorkspaceDir)/source/port/include/operating_system/$(PLATFORM_MODIFIER)",
 					"$(WorkspaceDir)/source/app",
-					"$(WorkspaceDir)/source/port/include/operating-system/$(PLATFORM_MODIFIER)/libarchive",
+					"$(WorkspaceDir)/source/port/include/operating_system/$(PLATFORM_MODIFIER)/libarchive",
 				);
 				USER_HEADER_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/include",
@@ -911,7 +911,7 @@
 					"$(WorkspaceDir)/operating_system",
 					"$(WorkspaceDir)/operating_system/operating_system-$(PLATFORM_MODIFIER)",
 					"$(WorkspaceDir)/operating_system/operating_system-$(PLATFORM_MODIFIER)/include",
-					"$(WorkspaceDir)/source/port/include/operating-system/$(PLATFORM_MODIFIER)",
+					"$(WorkspaceDir)/source/port/include/operating_system/$(PLATFORM_MODIFIER)",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/..",
 					"$(PROJECT_DIR)/../..",
@@ -982,9 +982,9 @@
 					"$(WorkspaceDir)/operating_system",
 					"$(WorkspaceDir)/operating_system/operating_system-$(PLATFORM_MODIFIER)",
 					"$(WorkspaceDir)/operating_system/operating_system-$(PLATFORM_MODIFIER)/include",
-					"$(WorkspaceDir)/source/port/include/operating-system/$(PLATFORM_MODIFIER)",
+					"$(WorkspaceDir)/source/port/include/operating_system/$(PLATFORM_MODIFIER)",
 					"$(WorkspaceDir)/source/app",
-					"$(WorkspaceDir)/source/port/include/operating-system/$(PLATFORM_MODIFIER)/libarchive",
+					"$(WorkspaceDir)/source/port/include/operating_system/$(PLATFORM_MODIFIER)/libarchive",
 				);
 				USER_HEADER_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/include",
@@ -997,7 +997,7 @@
 					"$(WorkspaceDir)/operating_system",
 					"$(WorkspaceDir)/operating_system/operating_system-$(PLATFORM_MODIFIER)",
 					"$(WorkspaceDir)/operating_system/operating_system-$(PLATFORM_MODIFIER)/include",
-					"$(WorkspaceDir)/source/port/include/operating-system/$(PLATFORM_MODIFIER)",
+					"$(WorkspaceDir)/source/port/include/operating_system/$(PLATFORM_MODIFIER)",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/..",
 					"$(PROJECT_DIR)/../..",
