@@ -37,7 +37,7 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{B3660BBE-E160-4BA7-8727-78F964C84291}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>port</RootNamespace>
+    <RootNamespace>libarchive</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
     <ProjectName>libarchive</ProjectName>
   </PropertyGroup>
