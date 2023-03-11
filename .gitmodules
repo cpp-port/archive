@@ -1,3 +1,6 @@
 [submodule "libarchive"]
 	path = libarchive
 	url = ../../libarchive/libarchive.git
+[submodule "archive"]
+	path = archive
+	url = ../../libarchive/libarchive
