@@ -1,1 +1,1 @@
-libarchive/libarchive/config_freebsd.h
+archive/libarchive/config_freebsd.h

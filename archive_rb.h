@@ -1,1 +1,1 @@
-libarchive/libarchive/archive_rb.h
+archive/libarchive/archive_rb.h

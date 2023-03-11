@@ -1,1 +1,1 @@
-libarchive/libarchive/archive_platform_xattr.h
+archive/libarchive/archive_platform_xattr.h

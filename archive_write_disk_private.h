@@ -1,1 +1,1 @@
-libarchive/libarchive/archive_write_disk_private.h
+archive/libarchive/archive_write_disk_private.h

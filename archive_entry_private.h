@@ -1,1 +1,1 @@
-libarchive/libarchive/archive_entry_private.h
+archive/libarchive/archive_entry_private.h

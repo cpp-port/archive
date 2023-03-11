@@ -1,0 +1,483 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Assembler Files">
+      <UniqueIdentifier>{c6fc5d5c-8a8b-4552-ac6d-9689b8afa14c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assembler Files\x86">
+      <UniqueIdentifier>{0cc2a38a-b7aa-4e31-bf18-d15124707603}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assembler Files\x64">
+      <UniqueIdentifier>{2699fb70-125a-4c7a-ad4d-002b4b04b764}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\tar">
+      <UniqueIdentifier>{91b3a8dc-0a98-490d-ae65-a3dba29e2d17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\archive">
+      <UniqueIdentifier>{be02deba-a1a8-4b15-b7c4-0a17ee08fdcd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\archive_fe">
+      <UniqueIdentifier>{4f91b72f-52fa-43f6-b55a-0e615cb6619e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="contrib\masmx86\inffas32.asm">
+      <Filter>Assembler Files\x86</Filter>
+    </CustomBuild>
+    <CustomBuild Include="contrib\masmx86\match686.asm">
+      <Filter>Assembler Files\x86</Filter>
+    </CustomBuild>
+    <CustomBuild Include="contrib\masmx64\gvmat64.asm">
+      <Filter>Assembler Files\x64</Filter>
+    </CustomBuild>
+    <CustomBuild Include="contrib\masmx64\inffasx64.asm">
+      <Filter>Assembler Files\x64</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="archive\libarchive\archive_acl.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_blake2s_ref.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_blake2sp_ref.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_check_magic.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_cmdline.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_cryptor.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_digest.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_disk_acl_darwin.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_disk_acl_freebsd.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_disk_acl_linux.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_disk_acl_sunos.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_entry.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_entry_copy_bhfi.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_entry_copy_stat.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_entry_link_resolver.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_entry_sparse.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_entry_stat.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_entry_strmode.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_entry_xattr.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_getdate.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_hmac.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_match.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_options.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_pack_dev.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_pathmatch.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_ppmd7.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_ppmd8.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_random.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_rb.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_read.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_read_add_passphrase.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_read_append_filter.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_read_data_into_fd.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_read_disk_entry_from_file.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_read_disk_posix.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_read_disk_set_standard_lookup.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_read_disk_windows.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_read_extract.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_read_extract2.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_read_open_fd.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_read_open_file.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_read_open_filename.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_read_open_memory.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_read_set_format.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_read_set_options.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_read_support_filter_all.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_read_support_filter_by_code.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_read_support_filter_bzip2.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_read_support_filter_compress.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_read_support_filter_grzip.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_read_support_filter_gzip.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_read_support_filter_lrzip.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_read_support_filter_lz4.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_read_support_filter_lzop.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_read_support_filter_none.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_read_support_filter_program.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_read_support_filter_rpm.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_read_support_filter_uu.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_read_support_filter_xz.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_read_support_filter_zstd.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_read_support_format_7zip.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_read_support_format_all.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_read_support_format_ar.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_read_support_format_by_code.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_read_support_format_cab.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_read_support_format_cpio.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_read_support_format_empty.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_read_support_format_iso9660.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_read_support_format_lha.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_read_support_format_mtree.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_read_support_format_rar.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_read_support_format_rar5.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_read_support_format_raw.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_read_support_format_tar.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_read_support_format_warc.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_read_support_format_xar.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_read_support_format_zip.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_string.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_string_sprintf.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_util.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_version_details.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_virtual.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_windows.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_write.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_write_add_filter.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_write_add_filter_b64encode.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_write_add_filter_by_name.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_write_add_filter_bzip2.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_write_add_filter_compress.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_write_add_filter_grzip.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_write_add_filter_gzip.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_write_add_filter_lrzip.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_write_add_filter_lz4.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_write_add_filter_lzop.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_write_add_filter_none.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_write_add_filter_program.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_write_add_filter_uuencode.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_write_add_filter_xz.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_write_add_filter_zstd.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_write_disk_posix.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_write_disk_set_standard_lookup.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_write_disk_windows.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_write_open_fd.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_write_open_file.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_write_open_filename.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_write_open_memory.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_write_set_format.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_write_set_format_7zip.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_write_set_format_ar.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_write_set_format_by_name.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_write_set_format_cpio.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_write_set_format_cpio_binary.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_write_set_format_cpio_newc.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_write_set_format_cpio_odc.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_write_set_format_filter_by_ext.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_write_set_format_gnutar.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_write_set_format_iso9660.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_write_set_format_mtree.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_write_set_format_pax.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_write_set_format_raw.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_write_set_format_shar.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_write_set_format_ustar.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_write_set_format_v7tar.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_write_set_format_warc.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_write_set_format_xar.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_write_set_format_zip.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_write_set_options.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_write_set_passphrase.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\filter_fork_posix.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\filter_fork_windows.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive\xxhash.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive_fe\err.c">
+      <Filter>Source Files\archive_fe</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive_fe\line_reader.c">
+      <Filter>Source Files\archive_fe</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive_fe\passphrase.c">
+      <Filter>Source Files\archive_fe</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\tar\bsdtar.c">
+      <Filter>Source Files\tar</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\tar\bsdtar_windows.c">
+      <Filter>Source Files\tar</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\tar\cmdline.c">
+      <Filter>Source Files\tar</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\tar\creation_set.c">
+      <Filter>Source Files\tar</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\tar\read.c">
+      <Filter>Source Files\tar</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\tar\subst.c">
+      <Filter>Source Files\tar</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\tar\util.c">
+      <Filter>Source Files\tar</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\tar\write.c">
+      <Filter>Source Files\tar</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="archive.def">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>
