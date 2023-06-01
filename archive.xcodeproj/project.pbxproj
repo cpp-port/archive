@@ -345,6 +345,8 @@
 		9A3BFBDE29C8462C005DE2BF /* archive_cmdline.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = archive_cmdline.c; path = archive/libarchive/archive_cmdline.c; sourceTree = SOURCE_ROOT; };
 		9A3BFBE029C84639005DE2BF /* archive_cryptor.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = archive_cryptor.c; path = archive/libarchive/archive_cryptor.c; sourceTree = SOURCE_ROOT; };
 		9A3BFBE629C84654005DE2BF /* archive_digest.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = archive_digest.c; path = archive/libarchive/archive_digest.c; sourceTree = SOURCE_ROOT; };
+		9A8CF9F62A2806C80049B167 /* _____release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "_____release.xcconfig"; sourceTree = SOURCE_ROOT; };
+		9A8CF9F72A2806C80049B167 /* _____debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "_____debug.xcconfig"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -377,6 +379,8 @@
 		9A1DD79129A98E5C00C9C80E /* archive */ = {
 			isa = PBXGroup;
 			children = (
+				9A8CF9F72A2806C80049B167 /* _____debug.xcconfig */,
+				9A8CF9F62A2806C80049B167 /* _____release.xcconfig */,
 				9A1DD7C229A98E5C00C9C80E /* libarchive */,
 				9A1DDB7129A98E6300C9C80E /* libarchive_fe */,
 			);
@@ -806,6 +810,7 @@
 /* Begin XCBuildConfiguration section */
 		9A1DD78629A98DE000C9C80E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A8CF9F72A2806C80049B167 /* _____debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -899,6 +904,7 @@
 		};
 		9A1DD78729A98DE000C9C80E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A8CF9F62A2806C80049B167 /* _____release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
