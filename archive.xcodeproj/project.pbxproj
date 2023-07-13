@@ -648,7 +648,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastUpgradeCheck = 1420;
+				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					9A1DD78329A98DE000C9C80E = {
 						CreatedOnToolsVersion = 14.2;
@@ -883,19 +883,13 @@
 					"$(PROJECT_DIR)/include",
 					"$(PROJECT_DIR)/../../_/$(PROJECT_NAME)",
 					.,
-					"$(WorkspaceDir)/source",
-					"$(WorkspaceDir)/source/include",
-					"$(WorkspaceDir)/source/app",
-					"$(WorkspaceDir)/source/app/include",
 					"$(WorkspaceDir)/operating_system",
 					"$(WorkspaceDir)/operating_system/operating_system-$(PLATFORM_MODIFIER)",
 					"$(WorkspaceDir)/operating_system/operating_system-$(PLATFORM_MODIFIER)/include",
+					"$(WorkspaceDir)/operating_system/operating_system-$(PLATFORM_MODIFIER)/configuration",
 					"$(WorkspaceDir)/operating_system/operating_system-$(PLATFORM_MODIFIER)/configuration/$(PROJECT_NAME)",
 					"$(WorkspaceDir)/port/include",
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/..",
-					"$(PROJECT_DIR)/../..",
-					"$(HOME)/sensitive/sensitive/include",
 				);
 				USE_HEADERMAP = NO;
 				WorkspaceDir = "$(SRCROOT)/../../..";
@@ -973,19 +967,13 @@
 					"$(PROJECT_DIR)/include",
 					"$(PROJECT_DIR)/../../_/$(PROJECT_NAME)",
 					.,
-					"$(WorkspaceDir)/source",
-					"$(WorkspaceDir)/source/include",
-					"$(WorkspaceDir)/source/app",
-					"$(WorkspaceDir)/source/app/include",
 					"$(WorkspaceDir)/operating_system",
 					"$(WorkspaceDir)/operating_system/operating_system-$(PLATFORM_MODIFIER)",
 					"$(WorkspaceDir)/operating_system/operating_system-$(PLATFORM_MODIFIER)/include",
+					"$(WorkspaceDir)/operating_system/operating_system-$(PLATFORM_MODIFIER)/configuration",
 					"$(WorkspaceDir)/operating_system/operating_system-$(PLATFORM_MODIFIER)/configuration/$(PROJECT_NAME)",
 					"$(WorkspaceDir)/port/include",
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/..",
-					"$(PROJECT_DIR)/../..",
-					"$(HOME)/sensitive/sensitive/include",
 				);
 				USE_HEADERMAP = NO;
 				WorkspaceDir = "$(SRCROOT)/../../..";
