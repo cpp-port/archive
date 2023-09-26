@@ -1,32 +1,30 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
     <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+      <UniqueIdentifier>{9d5fd0d7-d888-4a9a-882b-7966c8dda193}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\tar">
-      <UniqueIdentifier>{91b3a8dc-0a98-490d-ae65-a3dba29e2d17}</UniqueIdentifier>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{66a6a34e-1b59-4f45-b1ed-094afb2984d0}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\archive">
-      <UniqueIdentifier>{be02deba-a1a8-4b15-b7c4-0a17ee08fdcd}</UniqueIdentifier>
+      <UniqueIdentifier>{ed45095b-df4e-4a68-acc6-1149235959a3}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\archive_fe">
-      <UniqueIdentifier>{4f91b72f-52fa-43f6-b55a-0e615cb6619e}</UniqueIdentifier>
+      <UniqueIdentifier>{d13f33d2-8bb7-407b-bfe7-35d10393a191}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\tar">
+      <UniqueIdentifier>{6a4a4656-feac-4c32-9db8-3c0e3b0d97f9}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="archive\libarchive\archive_acl.c">
       <Filter>Source Files\archive</Filter>
     </ClCompile>
-    <ClCompile Include="archive\libarchive\archive_blake2s_ref.c">
+    <ClCompile Include="archive\libarchive\archive_blake2sp_ref.c">
       <Filter>Source Files\archive</Filter>
     </ClCompile>
-    <ClCompile Include="archive\libarchive\archive_blake2sp_ref.c">
+    <ClCompile Include="archive\libarchive\archive_blake2s_ref.c">
       <Filter>Source Files\archive</Filter>
     </ClCompile>
     <ClCompile Include="archive\libarchive\archive_check_magic.c">
@@ -448,13 +446,13 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="config.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="archive.def">
       <Filter>Source Files</Filter>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
