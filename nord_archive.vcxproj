@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x86">
+      <Configuration>Debug</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x86">
+      <Configuration>Release</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="archive\libarchive\archive_acl.c" />
+    <ClCompile Include="archive\libarchive\archive_blake2sp_ref.c" />
+    <ClCompile Include="archive\libarchive\archive_blake2s_ref.c" />
+    <ClCompile Include="archive\libarchive\archive_check_magic.c" />
+    <ClCompile Include="archive\libarchive\archive_cmdline.c" />
+    <ClCompile Include="archive\libarchive\archive_cryptor.c" />
+    <ClCompile Include="archive\libarchive\archive_digest.c" />
+    <ClCompile Include="archive\libarchive\archive_disk_acl_darwin.c" />
+    <ClCompile Include="archive\libarchive\archive_disk_acl_freebsd.c" />
+    <ClCompile Include="archive\libarchive\archive_disk_acl_linux.c" />
+    <ClCompile Include="archive\libarchive\archive_disk_acl_sunos.c" />
+    <ClCompile Include="archive\libarchive\archive_entry.c" />
+    <ClCompile Include="archive\libarchive\archive_entry_copy_bhfi.c" />
+    <ClCompile Include="archive\libarchive\archive_entry_copy_stat.c" />
+    <ClCompile Include="archive\libarchive\archive_entry_link_resolver.c" />
+    <ClCompile Include="archive\libarchive\archive_entry_sparse.c" />
+    <ClCompile Include="archive\libarchive\archive_entry_stat.c" />
+    <ClCompile Include="archive\libarchive\archive_entry_strmode.c" />
+    <ClCompile Include="archive\libarchive\archive_entry_xattr.c" />
+    <ClCompile Include="archive\libarchive\archive_getdate.c" />
+    <ClCompile Include="archive\libarchive\archive_hmac.c" />
+    <ClCompile Include="archive\libarchive\archive_match.c" />
+    <ClCompile Include="archive\libarchive\archive_options.c" />
+    <ClCompile Include="archive\libarchive\archive_pack_dev.c" />
+    <ClCompile Include="archive\libarchive\archive_pathmatch.c" />
+    <ClCompile Include="archive\libarchive\archive_ppmd7.c" />
+    <ClCompile Include="archive\libarchive\archive_ppmd8.c" />
+    <ClCompile Include="archive\libarchive\archive_random.c" />
+    <ClCompile Include="archive\libarchive\archive_rb.c" />
+    <ClCompile Include="archive\libarchive\archive_read.c" />
+    <ClCompile Include="archive\libarchive\archive_read_add_passphrase.c" />
+    <ClCompile Include="archive\libarchive\archive_read_append_filter.c" />
+    <ClCompile Include="archive\libarchive\archive_read_data_into_fd.c" />
+    <ClCompile Include="archive\libarchive\archive_read_disk_entry_from_file.c" />
+    <ClCompile Include="archive\libarchive\archive_read_disk_posix.c" />
+    <ClCompile Include="archive\libarchive\archive_read_disk_set_standard_lookup.c" />
+    <ClCompile Include="archive\libarchive\archive_read_disk_windows.c" />
+    <ClCompile Include="archive\libarchive\archive_read_extract.c" />
+    <ClCompile Include="archive\libarchive\archive_read_extract2.c" />
+    <ClCompile Include="archive\libarchive\archive_read_open_fd.c" />
+    <ClCompile Include="archive\libarchive\archive_read_open_file.c" />
+    <ClCompile Include="archive\libarchive\archive_read_open_filename.c" />
+    <ClCompile Include="archive\libarchive\archive_read_open_memory.c" />
+    <ClCompile Include="archive\libarchive\archive_read_set_format.c" />
+    <ClCompile Include="archive\libarchive\archive_read_set_options.c" />
+    <ClCompile Include="archive\libarchive\archive_read_support_filter_all.c" />
+    <ClCompile Include="archive\libarchive\archive_read_support_filter_by_code.c" />
+    <ClCompile Include="archive\libarchive\archive_read_support_filter_bzip2.c" />
+    <ClCompile Include="archive\libarchive\archive_read_support_filter_compress.c" />
+    <ClCompile Include="archive\libarchive\archive_read_support_filter_grzip.c" />
+    <ClCompile Include="archive\libarchive\archive_read_support_filter_gzip.c" />
+    <ClCompile Include="archive\libarchive\archive_read_support_filter_lrzip.c" />
+    <ClCompile Include="archive\libarchive\archive_read_support_filter_lz4.c" />
+    <ClCompile Include="archive\libarchive\archive_read_support_filter_lzop.c" />
+    <ClCompile Include="archive\libarchive\archive_read_support_filter_none.c" />
+    <ClCompile Include="archive\libarchive\archive_read_support_filter_program.c" />
+    <ClCompile Include="archive\libarchive\archive_read_support_filter_rpm.c" />
+    <ClCompile Include="archive\libarchive\archive_read_support_filter_uu.c" />
+    <ClCompile Include="archive\libarchive\archive_read_support_filter_xz.c" />
+    <ClCompile Include="archive\libarchive\archive_read_support_filter_zstd.c" />
+    <ClCompile Include="archive\libarchive\archive_read_support_format_7zip.c" />
+    <ClCompile Include="archive\libarchive\archive_read_support_format_all.c" />
+    <ClCompile Include="archive\libarchive\archive_read_support_format_ar.c" />
+    <ClCompile Include="archive\libarchive\archive_read_support_format_by_code.c" />
+    <ClCompile Include="archive\libarchive\archive_read_support_format_cab.c" />
+    <ClCompile Include="archive\libarchive\archive_read_support_format_cpio.c" />
+    <ClCompile Include="archive\libarchive\archive_read_support_format_empty.c" />
+    <ClCompile Include="archive\libarchive\archive_read_support_format_iso9660.c" />
+    <ClCompile Include="archive\libarchive\archive_read_support_format_lha.c" />
+    <ClCompile Include="archive\libarchive\archive_read_support_format_mtree.c" />
+    <ClCompile Include="archive\libarchive\archive_read_support_format_rar.c" />
+    <ClCompile Include="archive\libarchive\archive_read_support_format_rar5.c" />
+    <ClCompile Include="archive\libarchive\archive_read_support_format_raw.c" />
+    <ClCompile Include="archive\libarchive\archive_read_support_format_tar.c" />
+    <ClCompile Include="archive\libarchive\archive_read_support_format_warc.c" />
+    <ClCompile Include="archive\libarchive\archive_read_support_format_xar.c" />
+    <ClCompile Include="archive\libarchive\archive_read_support_format_zip.c" />
+    <ClCompile Include="archive\libarchive\archive_string.c" />
+    <ClCompile Include="archive\libarchive\archive_string_sprintf.c" />
+    <ClCompile Include="archive\libarchive\archive_util.c" />
+    <ClCompile Include="archive\libarchive\archive_version_details.c" />
+    <ClCompile Include="archive\libarchive\archive_virtual.c" />
+    <ClCompile Include="archive\libarchive\archive_windows.c" />
+    <ClCompile Include="archive\libarchive\archive_write.c" />
+    <ClCompile Include="archive\libarchive\archive_write_add_filter.c" />
+    <ClCompile Include="archive\libarchive\archive_write_add_filter_b64encode.c" />
+    <ClCompile Include="archive\libarchive\archive_write_add_filter_by_name.c" />
+    <ClCompile Include="archive\libarchive\archive_write_add_filter_bzip2.c" />
+    <ClCompile Include="archive\libarchive\archive_write_add_filter_compress.c" />
+    <ClCompile Include="archive\libarchive\archive_write_add_filter_grzip.c" />
+    <ClCompile Include="archive\libarchive\archive_write_add_filter_gzip.c" />
+    <ClCompile Include="archive\libarchive\archive_write_add_filter_lrzip.c" />
+    <ClCompile Include="archive\libarchive\archive_write_add_filter_lz4.c" />
+    <ClCompile Include="archive\libarchive\archive_write_add_filter_lzop.c" />
+    <ClCompile Include="archive\libarchive\archive_write_add_filter_none.c" />
+    <ClCompile Include="archive\libarchive\archive_write_add_filter_program.c" />
+    <ClCompile Include="archive\libarchive\archive_write_add_filter_uuencode.c" />
+    <ClCompile Include="archive\libarchive\archive_write_add_filter_xz.c" />
+    <ClCompile Include="archive\libarchive\archive_write_add_filter_zstd.c" />
+    <ClCompile Include="archive\libarchive\archive_write_disk_posix.c" />
+    <ClCompile Include="archive\libarchive\archive_write_disk_set_standard_lookup.c" />
+    <ClCompile Include="archive\libarchive\archive_write_disk_windows.c" />
+    <ClCompile Include="archive\libarchive\archive_write_open_fd.c" />
+    <ClCompile Include="archive\libarchive\archive_write_open_file.c" />
+    <ClCompile Include="archive\libarchive\archive_write_open_filename.c" />
+    <ClCompile Include="archive\libarchive\archive_write_open_memory.c" />
+    <ClCompile Include="archive\libarchive\archive_write_set_format.c" />
+    <ClCompile Include="archive\libarchive\archive_write_set_format_7zip.c" />
+    <ClCompile Include="archive\libarchive\archive_write_set_format_ar.c" />
+    <ClCompile Include="archive\libarchive\archive_write_set_format_by_name.c" />
+    <ClCompile Include="archive\libarchive\archive_write_set_format_cpio.c" />
+    <ClCompile Include="archive\libarchive\archive_write_set_format_cpio_binary.c" />
+    <ClCompile Include="archive\libarchive\archive_write_set_format_cpio_newc.c" />
+    <ClCompile Include="archive\libarchive\archive_write_set_format_cpio_odc.c" />
+    <ClCompile Include="archive\libarchive\archive_write_set_format_filter_by_ext.c" />
+    <ClCompile Include="archive\libarchive\archive_write_set_format_gnutar.c" />
+    <ClCompile Include="archive\libarchive\archive_write_set_format_iso9660.c" />
+    <ClCompile Include="archive\libarchive\archive_write_set_format_mtree.c" />
+    <ClCompile Include="archive\libarchive\archive_write_set_format_pax.c" />
+    <ClCompile Include="archive\libarchive\archive_write_set_format_raw.c" />
+    <ClCompile Include="archive\libarchive\archive_write_set_format_shar.c" />
+    <ClCompile Include="archive\libarchive\archive_write_set_format_ustar.c" />
+    <ClCompile Include="archive\libarchive\archive_write_set_format_v7tar.c" />
+    <ClCompile Include="archive\libarchive\archive_write_set_format_warc.c" />
+    <ClCompile Include="archive\libarchive\archive_write_set_format_xar.c" />
+    <ClCompile Include="archive\libarchive\archive_write_set_format_zip.c" />
+    <ClCompile Include="archive\libarchive\archive_write_set_options.c" />
+    <ClCompile Include="archive\libarchive\archive_write_set_passphrase.c" />
+    <ClCompile Include="archive\libarchive\filter_fork_posix.c" />
+    <ClCompile Include="archive\libarchive\filter_fork_windows.c" />
+    <ClCompile Include="archive\libarchive\xxhash.c" />
+    <ClCompile Include="archive\libarchive_fe\err.c" />
+    <ClCompile Include="archive\libarchive_fe\line_reader.c" />
+    <ClCompile Include="archive\libarchive_fe\passphrase.c" />
+    <ClCompile Include="archive\tar\bsdtar.c" />
+    <ClCompile Include="archive\tar\bsdtar_windows.c" />
+    <ClCompile Include="archive\tar\cmdline.c" />
+    <ClCompile Include="archive\tar\creation_set.c" />
+    <ClCompile Include="archive\tar\read.c" />
+    <ClCompile Include="archive\tar\subst.c" />
+    <ClCompile Include="archive\tar\util.c" />
+    <ClCompile Include="archive\tar\write.c" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{292558D3-B0A0-470A-8439-8C4C80FA37DA}</ProjectGuid>
+    <Keyword>Android</Keyword>
+    <ApplicationType>Android</ApplicationType>
+    <ApplicationTypeRevision>3.0</ApplicationTypeRevision>
+    <ProjectName>archive</ProjectName>
+    <RootNamespace>port</RootNamespace>
+    <MinimumVisualStudioVersion>16.0</MinimumVisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-26</AndroidAPILevel>
+    <UseOfStl>c++_static</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <UseOfStl>c++_static</UseOfStl>
+    <ThumbMode>Disabled</ThumbMode>
+    <AndroidAPILevel>android-26</AndroidAPILevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-26</AndroidAPILevel>
+    <UseOfStl>c++_static</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <UseOfStl>c++_static</UseOfStl>
+    <ThumbMode>Disabled</ThumbMode>
+    <AndroidAPILevel>android-26</AndroidAPILevel>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <Import Project="..\..\..\operating_system\operating_system-android\port.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <Import Project="..\..\..\operating_system\operating_system-android\port.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <Import Project="..\..\..\operating_system\operating_system-android\port.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <Import Project="..\..\..\operating_system\operating_system-android\port.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <OutDir>$(SolutionDir)..\..\..\..\operating_system\storage-android\third\library\$(PlatformName)\$(Configuration)\</OutDir>
+    <IntDir>$(TimeDir)intermediate\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
+    <UseMultiToolTask>true</UseMultiToolTask>
+    <TargetName>lib$(ProjectName)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <OutDir>$(SolutionDir)..\..\..\..\operating_system\storage-android\third\library\$(PlatformName)\$(Configuration)\</OutDir>
+    <IntDir>$(TimeDir)intermediate\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
+    <UseMultiToolTask>true</UseMultiToolTask>
+    <TargetName>lib$(ProjectName)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <OutDir>$(SolutionDir)..\..\..\..\operating_system\storage-android\third\library\$(PlatformName)\$(Configuration)\</OutDir>
+    <IntDir>$(TimeDir)intermediate\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
+    <UseMultiToolTask>false</UseMultiToolTask>
+    <TargetName>lib$(ProjectName)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <OutDir>$(SolutionDir)..\..\..\..\operating_system\storage-android\third\library\$(PlatformName)\$(Configuration)\</OutDir>
+    <IntDir>$(TimeDir)intermediate\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
+    <UseMultiToolTask>true</UseMultiToolTask>
+    <TargetName>lib$(ProjectName)</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <ClCompile>
+      <CppLanguageStandard>c++1z</CppLanguageStandard>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <AdditionalOptions>-Wno-attributes -Wno-sign-compare -Wno-comment -Wno-strict-overflow -Wno-unused-local-typedefs -Wno-unknown-pragmas -Wno-unused-function -Wno-unused-variable -Wno-unused-value -Wno-unknown-pragmas -Wno-unused-function -Wno-implicit-int -Wno-unused-variable  -Wno-pointer-sign -Wdynamic-exception-spec -Wregister -Wenum-conversion</AdditionalOptions>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <CLanguageStandard>c11</CLanguageStandard>
+      <ForcedIncludeFiles>
+      </ForcedIncludeFiles>
+      <PreprocessorDefinitions>BSDTAR_VERSION_STRING="0";HAVE_CONFIG_H;__LIBARCHIVE_BUILD;_$(ProjectName)_project;_output_type_$(OutputType)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link />
+    <Link>
+      <AdditionalLibraryDirectories>$(OutDir);$(__operating_system)storage-android\third\library\$(Platform)\$(Configuration)\;$(__operating_system)storage-android\library\$(Platform)\$(Configuration)\;$(SolutionDir)..\..\..\time\$(Platform)\$(Configuration)\;%(AdditionalLibraryDirectories);$(ToolchainPrebuiltPath)\lib\gcc\i686-linux-android\$(ToolchainVersion);$(StlLibraryPath)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <ClCompile>
+      <AdditionalOptions>-Wno-attributes -Wno-sign-compare -Wno-comment -Wno-strict-overflow -Wno-unused-local-typedefs -Wno-unknown-pragmas -Wno-unused-function -Wno-unused-variable -Wno-unused-value -Wno-unknown-pragmas -Wno-unused-function -Wno-implicit-int -Wno-unused-variable  -Wno-pointer-sign -Wdynamic-exception-spec -Wregister -Wenum-conversion</AdditionalOptions>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <CLanguageStandard>c11</CLanguageStandard>
+      <CppLanguageStandard>c++1z</CppLanguageStandard>
+      <ForcedIncludeFiles>
+      </ForcedIncludeFiles>
+      <PreprocessorDefinitions>BSDTAR_VERSION_STRING="0";HAVE_CONFIG_H;__LIBARCHIVE_BUILD;_$(ProjectName)_project;_output_type_$(OutputType)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link />
+    <Link>
+      <AdditionalLibraryDirectories>$(OutDir);$(__operating_system)storage-android\third\library\$(Platform)\$(Configuration)\;$(__operating_system)storage-android\library\$(Platform)\$(Configuration)\;$(SolutionDir)..\..\..\time\$(Platform)\$(Configuration)\;%(AdditionalLibraryDirectories);$(ToolchainPrebuiltPath)\lib\gcc\i686-linux-android\$(ToolchainVersion);$(StlLibraryPath)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <ClCompile>
+      <AdditionalOptions>-Wno-attributes -Wno-sign-compare -Wno-comment -Wno-strict-overflow -Wno-unused-local-typedefs -Wno-unknown-pragmas -Wno-unused-function -Wno-unused-variable -Wno-unused-value -Wno-unknown-pragmas -Wno-unused-function -Wno-implicit-int -Wno-unused-variable  -Wno-pointer-sign -Wdynamic-exception-spec -Wregister -Wenum-conversion</AdditionalOptions>
+      <DebugInformationFormat>FullDebug</DebugInformationFormat>
+      <ForcedIncludeFiles>$(SolutionDir)../../operating_system-android/operational_system/solution_arm_stage.h</ForcedIncludeFiles>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <CLanguageStandard>c11</CLanguageStandard>
+      <CppLanguageStandard>c++1z</CppLanguageStandard>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(OutDir);$(__operating_system)storage-android\third\library\$(Platform)\$(Configuration)\;$(__operating_system)storage-android\library\$(Platform)\$(Configuration)\;$(SolutionDir)..\..\..\time\$(Platform)\$(Configuration)\;%(AdditionalLibraryDirectories);$(ToolchainPrebuiltPath)\lib\gcc\i686-linux-android\$(ToolchainVersion);$(StlLibraryPath)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <ClCompile>
+      <AdditionalOptions>-Wno-attributes -Wno-sign-compare -Wno-comment -Wno-strict-overflow -Wno-unused-local-typedefs -Wno-unknown-pragmas -Wno-unused-function -Wno-unused-variable -Wno-unused-value -Wno-unknown-pragmas -Wno-unused-function -Wno-implicit-int -Wno-unused-variable  -Wno-pointer-sign -Wdynamic-exception-spec -Wregister -Wenum-conversion</AdditionalOptions>
+      <DebugInformationFormat>FullDebug</DebugInformationFormat>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <CLanguageStandard>c11</CLanguageStandard>
+      <CppLanguageStandard>c++1z</CppLanguageStandard>
+      <ForcedIncludeFiles>$(SolutionDir)../../operating_system-android/operational_system/solution_x86_stage.h</ForcedIncludeFiles>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(OutDir);$(__operating_system)storage-android\third\library\$(Platform)\$(Configuration)\;$(__operating_system)storage-android\library\$(Platform)\$(Configuration)\;$(SolutionDir)..\..\..\time\$(Platform)\$(Configuration)\;%(AdditionalLibraryDirectories);$(ToolchainPrebuiltPath)\lib\gcc\i686-linux-android\$(ToolchainVersion);$(StlLibraryPath)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>
