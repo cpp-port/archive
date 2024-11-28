@@ -692,13 +692,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9AC107342B6ACABE0053DB45 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -1075,7 +1068,6 @@
 			buildPhases = (
 				9AC106822B6ACABE0053DB45 /* Headers */,
 				9AC106AE2B6ACABE0053DB45 /* Sources */,
-				9AC107342B6ACABE0053DB45 /* Frameworks */,
 			);
 			buildRules = (
 			);
