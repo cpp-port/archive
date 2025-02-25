@@ -492,6 +492,18 @@
 		9AD7BC0C2B5775D200CC2D56 /* line_reader.c in Sources */ = {isa = PBXBuildFile; fileRef = 9AD7BC022B5775C700CC2D56 /* line_reader.c */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		9A5955762D6D7FBF00B096D0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		9AAF8C4E2B4C8C6000E120B2 /* libarchive.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libarchive.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AAF8C662B4C8CD600E120B2 /* _____debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "_____debug.xcconfig"; sourceTree = SOURCE_ROOT; };
@@ -1035,6 +1047,8 @@
 				9AAF8C4A2B4C8C6000E120B2 /* Headers */,
 				9AAF8C4B2B4C8C6000E120B2 /* Sources */,
 				9AAF8C4C2B4C8C6000E120B2 /* Frameworks */,
+				9A5955762D6D7FBF00B096D0 /* CopyFiles */,
+				9A5955772D6D7FC900B096D0 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -1112,6 +1126,28 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9A5955772D6D7FC900B096D0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(EXECUTABLE_NAME)",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(WorkspaceDir)/time-$(PLATFORM_MODIFIER)/output/$(EXECUTABLE_NAME)",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = ". ${WorkspaceDir}/../operating_system/tool/bin/_on_after_build_dylib\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9AAF8C4B2B4C8C6000E120B2 /* Sources */ = {
