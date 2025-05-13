@@ -894,6 +894,7 @@
     <ClCompile Include="archive\libarchive\archive_read_support_format_zip.c" />
     <ClCompile Include="archive\libarchive\archive_string.c" />
     <ClCompile Include="archive\libarchive\archive_string_sprintf.c" />
+    <ClCompile Include="archive\libarchive\archive_time.c" />
     <ClCompile Include="archive\libarchive\archive_util.c" />
     <ClCompile Include="archive\libarchive\archive_version_details.c" />
     <ClCompile Include="archive\libarchive\archive_virtual.c" />

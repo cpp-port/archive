@@ -446,6 +446,9 @@
     <ClCompile Include="archive\tar\write.c">
       <Filter>Source Files\tar</Filter>
     </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_time.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="config.h">
