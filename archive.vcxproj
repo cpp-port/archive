@@ -834,11 +834,11 @@
     <ClCompile Include="archive\libarchive\archive_entry_stat.c" />
     <ClCompile Include="archive\libarchive\archive_entry_strmode.c" />
     <ClCompile Include="archive\libarchive\archive_entry_xattr.c" />
-    <ClCompile Include="archive\libarchive\archive_getdate.c" />
     <ClCompile Include="archive\libarchive\archive_hmac.c" />
     <ClCompile Include="archive\libarchive\archive_match.c" />
     <ClCompile Include="archive\libarchive\archive_options.c" />
     <ClCompile Include="archive\libarchive\archive_pack_dev.c" />
+    <ClCompile Include="archive\libarchive\archive_parse_date.c" />
     <ClCompile Include="archive\libarchive\archive_pathmatch.c" />
     <ClCompile Include="archive\libarchive\archive_ppmd7.c" />
     <ClCompile Include="archive\libarchive\archive_ppmd8.c" />
