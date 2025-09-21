@@ -1263,12 +1263,9 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SYSTEM_HEADER_SEARCH_PATHS = (
-					"$(WorkspaceDir)/operating_system",
-					"$(WorkspaceDir)/operating_system/operating_system-$(PLATFORM_MODIFIER)",
-					"$(WorkspaceDir)/operating_system/operating_system-$(PLATFORM_MODIFIER)/include/configuration_selection/$(CONFIGURATION)",
 					"$(WorkspaceDir)/operating_system/operating_system-$(PLATFORM_MODIFIER)/include",
-					"$(WorkspaceDir)/source/port/include/operating_system/$(PLATFORM_MODIFIER)",
-					"$(HOME)/operating_system/operating_system/include",
+					"$(WorkspaceDir)/port/include",
+					"$(WorkspaceDir)/source/app/include",
 				);
 				USER_HEADER_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/include",
@@ -1361,12 +1358,9 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SYSTEM_HEADER_SEARCH_PATHS = (
-					"$(WorkspaceDir)/operating_system",
-					"$(WorkspaceDir)/operating_system/operating_system-$(PLATFORM_MODIFIER)",
-					"$(WorkspaceDir)/operating_system/operating_system-$(PLATFORM_MODIFIER)/include/configuration_selection/$(CONFIGURATION)",
 					"$(WorkspaceDir)/operating_system/operating_system-$(PLATFORM_MODIFIER)/include",
-					"$(WorkspaceDir)/source/port/include/operating_system/$(PLATFORM_MODIFIER)",
-					"$(HOME)/operating_system/operating_system/include",
+					"$(WorkspaceDir)/port/include",
+					"$(WorkspaceDir)/source/app/include",
 				);
 				USER_HEADER_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/include",

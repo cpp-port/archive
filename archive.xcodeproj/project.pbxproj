@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		9A28B0522B5CB792005B9A9C /* filter_fork_posix.c in Sources */ = {isa = PBXBuildFile; fileRef = 9AD7BA502B57751800CC2D56 /* filter_fork_posix.c */; };
+		9A7FEAFB2E7F1F8B0082C6FD /* lafe_err.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A7FEAFA2E7F1F8B0082C6FD /* lafe_err.c */; };
+		9A7FEAFC2E7F1F8B0082C6FD /* lafe_err.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A7FEAFA2E7F1F8B0082C6FD /* lafe_err.c */; };
+		9A7FEAFD2E7F1F8B0082C6FD /* lafe_err.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A7FEAFA2E7F1F8B0082C6FD /* lafe_err.c */; };
+		9A7FEAFF2E7F1F9B0082C6FD /* lafe_err.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A7FEAFE2E7F1F9B0082C6FD /* lafe_err.h */; };
+		9A7FEB002E7F1F9B0082C6FD /* lafe_err.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A7FEAFE2E7F1F9B0082C6FD /* lafe_err.h */; };
+		9A7FEB012E7F1F9B0082C6FD /* lafe_err.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A7FEAFE2E7F1F9B0082C6FD /* lafe_err.h */; };
 		9A8DEBF32DEA5A190025FA7E /* archive_parse_date.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A8DEBF22DEA5A190025FA7E /* archive_parse_date.c */; };
 		9A8DEBF42DEA5A190025FA7E /* archive_parse_date.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A8DEBF22DEA5A190025FA7E /* archive_parse_date.c */; };
 		9A8DEBF52DEA5A190025FA7E /* archive_parse_date.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A8DEBF22DEA5A190025FA7E /* archive_parse_date.c */; };
@@ -32,7 +38,6 @@
 		9AC106962B6ACABE0053DB45 /* archive_blake2_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AD7BA762B57751D00CC2D56 /* archive_blake2_impl.h */; };
 		9AC106972B6ACABE0053DB45 /* passphrase.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AD7BC002B5775C700CC2D56 /* passphrase.h */; };
 		9AC106982B6ACABE0053DB45 /* archive_xxhash.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AD7BAC12B57752900CC2D56 /* archive_xxhash.h */; };
-		9AC106992B6ACABE0053DB45 /* err.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AD7BBFD2B5775C600CC2D56 /* err.h */; };
 		9AC1069A2B6ACABE0053DB45 /* archive_blake2.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AD7BABF2B57752900CC2D56 /* archive_blake2.h */; };
 		9AC1069B2B6ACABE0053DB45 /* archive_ppmd7_private.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AD7BAB52B57752700CC2D56 /* archive_ppmd7_private.h */; };
 		9AC1069C2B6ACABE0053DB45 /* archive_write_set_format_private.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AD7BA732B57751C00CC2D56 /* archive_write_set_format_private.h */; };
@@ -152,7 +157,6 @@
 		9AC107102B6ACABE0053DB45 /* archive_read_support_filter_xz.c in Sources */ = {isa = PBXBuildFile; fileRef = 9AD7BA642B57751A00CC2D56 /* archive_read_support_filter_xz.c */; };
 		9AC107112B6ACABE0053DB45 /* archive_read_support_format_rar.c in Sources */ = {isa = PBXBuildFile; fileRef = 9AD7BAAE2B57752600CC2D56 /* archive_read_support_format_rar.c */; };
 		9AC107122B6ACABE0053DB45 /* archive_write_set_format_iso9660.c in Sources */ = {isa = PBXBuildFile; fileRef = 9AD7BA902B57752100CC2D56 /* archive_write_set_format_iso9660.c */; };
-		9AC107132B6ACABE0053DB45 /* err.c in Sources */ = {isa = PBXBuildFile; fileRef = 9AD7BBFC2B5775C600CC2D56 /* err.c */; };
 		9AC107142B6ACABE0053DB45 /* archive_read_open_memory.c in Sources */ = {isa = PBXBuildFile; fileRef = 9AD7BA5E2B57751900CC2D56 /* archive_read_open_memory.c */; };
 		9AC107152B6ACABE0053DB45 /* archive_disk_acl_sunos.c in Sources */ = {isa = PBXBuildFile; fileRef = 9AD7BA4A2B57751700CC2D56 /* archive_disk_acl_sunos.c */; };
 		9AC107162B6ACABE0053DB45 /* archive_read_support_format_iso9660.c in Sources */ = {isa = PBXBuildFile; fileRef = 9AD7BA552B57751800CC2D56 /* archive_read_support_format_iso9660.c */; };
@@ -484,14 +488,11 @@
 		9AD7BBF92B57759100CC2D56 /* archive_write_add_filter_compress.c in Sources */ = {isa = PBXBuildFile; fileRef = 9AD7BACD2B57752B00CC2D56 /* archive_write_add_filter_compress.c */; };
 		9AD7BBFA2B57759100CC2D56 /* archive_disk_acl_sunos.c in Sources */ = {isa = PBXBuildFile; fileRef = 9AD7BA4A2B57751700CC2D56 /* archive_disk_acl_sunos.c */; };
 		9AD7BBFB2B57759100CC2D56 /* archive_write_set_format_cpio_newc.c in Sources */ = {isa = PBXBuildFile; fileRef = 9AD7BAA12B57752400CC2D56 /* archive_write_set_format_cpio_newc.c */; };
-		9AD7BC032B5775C800CC2D56 /* err.c in Sources */ = {isa = PBXBuildFile; fileRef = 9AD7BBFC2B5775C600CC2D56 /* err.c */; };
-		9AD7BC042B5775C800CC2D56 /* err.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AD7BBFD2B5775C600CC2D56 /* err.h */; };
 		9AD7BC052B5775C800CC2D56 /* passphrase.c in Sources */ = {isa = PBXBuildFile; fileRef = 9AD7BBFE2B5775C600CC2D56 /* passphrase.c */; };
 		9AD7BC062B5775C800CC2D56 /* lafe_platform.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AD7BBFF2B5775C700CC2D56 /* lafe_platform.h */; };
 		9AD7BC072B5775C800CC2D56 /* passphrase.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AD7BC002B5775C700CC2D56 /* passphrase.h */; };
 		9AD7BC082B5775C800CC2D56 /* line_reader.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AD7BC012B5775C700CC2D56 /* line_reader.h */; };
 		9AD7BC092B5775C800CC2D56 /* line_reader.c in Sources */ = {isa = PBXBuildFile; fileRef = 9AD7BC022B5775C700CC2D56 /* line_reader.c */; };
-		9AD7BC0A2B5775D200CC2D56 /* err.c in Sources */ = {isa = PBXBuildFile; fileRef = 9AD7BBFC2B5775C600CC2D56 /* err.c */; };
 		9AD7BC0B2B5775D200CC2D56 /* passphrase.c in Sources */ = {isa = PBXBuildFile; fileRef = 9AD7BBFE2B5775C600CC2D56 /* passphrase.c */; };
 		9AD7BC0C2B5775D200CC2D56 /* line_reader.c in Sources */ = {isa = PBXBuildFile; fileRef = 9AD7BC022B5775C700CC2D56 /* line_reader.c */; };
 /* End PBXBuildFile section */
@@ -509,6 +510,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9A7FEAFA2E7F1F8B0082C6FD /* lafe_err.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = lafe_err.c; sourceTree = "<group>"; };
+		9A7FEAFE2E7F1F9B0082C6FD /* lafe_err.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lafe_err.h; sourceTree = "<group>"; };
 		9A8DEBF22DEA5A190025FA7E /* archive_parse_date.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = archive_parse_date.c; sourceTree = "<group>"; };
 		9AAF8C4E2B4C8C6000E120B2 /* libarchive.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libarchive.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AAF8C662B4C8CD600E120B2 /* _____debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "_____debug.xcconfig"; sourceTree = SOURCE_ROOT; };
@@ -685,8 +688,6 @@
 		9AD7BACF2B57752C00CC2D56 /* archive_read_support_format_rar5.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = archive_read_support_format_rar5.c; sourceTree = "<group>"; };
 		9AD7BAD02B57752C00CC2D56 /* archive_read_support_filter_uu.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = archive_read_support_filter_uu.c; sourceTree = "<group>"; };
 		9AD7BAD12B57752C00CC2D56 /* archive_ppmd_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = archive_ppmd_private.h; sourceTree = "<group>"; };
-		9AD7BBFC2B5775C600CC2D56 /* err.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = err.c; sourceTree = "<group>"; };
-		9AD7BBFD2B5775C600CC2D56 /* err.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = err.h; sourceTree = "<group>"; };
 		9AD7BBFE2B5775C600CC2D56 /* passphrase.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = passphrase.c; sourceTree = "<group>"; };
 		9AD7BBFF2B5775C700CC2D56 /* lafe_platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lafe_platform.h; sourceTree = "<group>"; };
 		9AD7BC002B5775C700CC2D56 /* passphrase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = passphrase.h; sourceTree = "<group>"; };
@@ -744,8 +745,8 @@
 		9AAF8C672B4C8CD600E120B2 /* libarchive_fe */ = {
 			isa = PBXGroup;
 			children = (
-				9AD7BBFC2B5775C600CC2D56 /* err.c */,
-				9AD7BBFD2B5775C600CC2D56 /* err.h */,
+				9A7FEAFE2E7F1F9B0082C6FD /* lafe_err.h */,
+				9A7FEAFA2E7F1F8B0082C6FD /* lafe_err.c */,
 				9AD7BBFF2B5775C700CC2D56 /* lafe_platform.h */,
 				9AD7BC022B5775C700CC2D56 /* line_reader.c */,
 				9AD7BC012B5775C700CC2D56 /* line_reader.h */,
@@ -958,11 +959,11 @@
 				9AD7BB5E2B57752D00CC2D56 /* archive_digest_private.h in Headers */,
 				9AD7BB0F2B57752D00CC2D56 /* archive_acl_private.h in Headers */,
 				9AD7BB302B57752D00CC2D56 /* archive_crc32.h in Headers */,
+				9A7FEB002E7F1F9B0082C6FD /* lafe_err.h in Headers */,
 				9AD7BB3C2B57752D00CC2D56 /* archive_write_private.h in Headers */,
 				9AD7BB202B57752D00CC2D56 /* archive_blake2_impl.h in Headers */,
 				9AD7BC072B5775C800CC2D56 /* passphrase.h in Headers */,
 				9AD7BB6B2B57752D00CC2D56 /* archive_xxhash.h in Headers */,
-				9AD7BC042B5775C800CC2D56 /* err.h in Headers */,
 				9AD7BB692B57752D00CC2D56 /* archive_blake2.h in Headers */,
 				9AD7BB5F2B57752D00CC2D56 /* archive_ppmd7_private.h in Headers */,
 				9AD7BB1D2B57752D00CC2D56 /* archive_write_set_format_private.h in Headers */,
@@ -990,6 +991,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A7FEB012E7F1F9B0082C6FD /* lafe_err.h in Headers */,
 				9ACF5F5E2D9BD81E002033DF /* archive_time_private.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1016,11 +1018,11 @@
 				9AC106922B6ACABE0053DB45 /* archive_digest_private.h in Headers */,
 				9AC106932B6ACABE0053DB45 /* archive_acl_private.h in Headers */,
 				9AC106942B6ACABE0053DB45 /* archive_crc32.h in Headers */,
+				9A7FEAFF2E7F1F9B0082C6FD /* lafe_err.h in Headers */,
 				9AC106952B6ACABE0053DB45 /* archive_write_private.h in Headers */,
 				9AC106962B6ACABE0053DB45 /* archive_blake2_impl.h in Headers */,
 				9AC106972B6ACABE0053DB45 /* passphrase.h in Headers */,
 				9AC106982B6ACABE0053DB45 /* archive_xxhash.h in Headers */,
-				9AC106992B6ACABE0053DB45 /* err.h in Headers */,
 				9AC1069A2B6ACABE0053DB45 /* archive_blake2.h in Headers */,
 				9AC1069B2B6ACABE0053DB45 /* archive_ppmd7_private.h in Headers */,
 				9AC1069C2B6ACABE0053DB45 /* archive_write_set_format_private.h in Headers */,
@@ -1215,6 +1217,7 @@
 				9AD7BC092B5775C800CC2D56 /* line_reader.c in Sources */,
 				9AD7BAF72B57752D00CC2D56 /* archive_write_add_filter_zstd.c in Sources */,
 				9AD7BADF2B57752C00CC2D56 /* archive_write_set_options.c in Sources */,
+				9A7FEAFB2E7F1F8B0082C6FD /* lafe_err.c in Sources */,
 				9AD7BADE2B57752C00CC2D56 /* archive_read_support_format_cab.c in Sources */,
 				9AD7BB6D2B57752D00CC2D56 /* archive_version_details.c in Sources */,
 				9AD7BAD52B57752C00CC2D56 /* archive_match.c in Sources */,
@@ -1262,7 +1265,6 @@
 				9AD7BB0E2B57752D00CC2D56 /* archive_read_support_filter_xz.c in Sources */,
 				9AD7BB582B57752D00CC2D56 /* archive_read_support_format_rar.c in Sources */,
 				9AD7BB3A2B57752D00CC2D56 /* archive_write_set_format_iso9660.c in Sources */,
-				9AD7BC032B5775C800CC2D56 /* err.c in Sources */,
 				9AD7BB082B57752D00CC2D56 /* archive_read_open_memory.c in Sources */,
 				9AD7BAF42B57752D00CC2D56 /* archive_disk_acl_sunos.c in Sources */,
 				9AD7BAFF2B57752D00CC2D56 /* archive_read_support_format_iso9660.c in Sources */,
@@ -1366,7 +1368,6 @@
 				9AD7BB8E2B57759000CC2D56 /* archive_write_add_filter_none.c in Sources */,
 				9AD7BBED2B57759100CC2D56 /* archive_read.c in Sources */,
 				9AD7BB842B57759000CC2D56 /* archive_read_support_format_zip.c in Sources */,
-				9AD7BC0A2B5775D200CC2D56 /* err.c in Sources */,
 				9AD7BBDD2B57759100CC2D56 /* archive_disk_acl_linux.c in Sources */,
 				9AD7BBD92B57759100CC2D56 /* archive_read_data_into_fd.c in Sources */,
 				9AD7BB8A2B57759000CC2D56 /* archive_entry_xattr.c in Sources */,
@@ -1427,6 +1428,7 @@
 				9AD7BB962B57759100CC2D56 /* archive_write_set_format_raw.c in Sources */,
 				9AD7BBE32B57759100CC2D56 /* archive_acl.c in Sources */,
 				9ACF5F5D2D9BD81E002033DF /* archive_time.c in Sources */,
+				9A7FEAFC2E7F1F8B0082C6FD /* lafe_err.c in Sources */,
 				9AD7BBBF2B57759100CC2D56 /* archive_string.c in Sources */,
 				9AD7BBB32B57759100CC2D56 /* archive_ppmd8.c in Sources */,
 				9AD7BBB12B57759100CC2D56 /* archive_write_set_passphrase.c in Sources */,
@@ -1495,6 +1497,7 @@
 				9AC106E12B6ACABE0053DB45 /* line_reader.c in Sources */,
 				9AC106E22B6ACABE0053DB45 /* archive_write_add_filter_zstd.c in Sources */,
 				9AC106E32B6ACABE0053DB45 /* archive_write_set_options.c in Sources */,
+				9A7FEAFD2E7F1F8B0082C6FD /* lafe_err.c in Sources */,
 				9AC106E42B6ACABE0053DB45 /* archive_read_support_format_cab.c in Sources */,
 				9AC106E52B6ACABE0053DB45 /* archive_version_details.c in Sources */,
 				9AC106E62B6ACABE0053DB45 /* archive_match.c in Sources */,
@@ -1542,7 +1545,6 @@
 				9AC107102B6ACABE0053DB45 /* archive_read_support_filter_xz.c in Sources */,
 				9AC107112B6ACABE0053DB45 /* archive_read_support_format_rar.c in Sources */,
 				9AC107122B6ACABE0053DB45 /* archive_write_set_format_iso9660.c in Sources */,
-				9AC107132B6ACABE0053DB45 /* err.c in Sources */,
 				9AC107142B6ACABE0053DB45 /* archive_read_open_memory.c in Sources */,
 				9AC107152B6ACABE0053DB45 /* archive_disk_acl_sunos.c in Sources */,
 				9AC107162B6ACABE0053DB45 /* archive_read_support_format_iso9660.c in Sources */,
@@ -1647,6 +1649,11 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				STRIP_INSTALLED_PRODUCT = NO;
+				SYSTEM_HEADER_SEARCH_PATHS = (
+					"$(WorkspaceDir)/operating_system/operating_system-$(PLATFORM_MODIFIER)/include",
+					"$(WorkspaceDir)/port/include",
+					"$(WorkspaceDir)/source/app/include",
+				);
 				USER_HEADER_SEARCH_PATHS = (
 					"$(WorkspaceDir)/operating_system/operating_system-$(PLATFORM_MODIFIER)/configuration",
 					"$(WorkspaceDir)/operating_system/operating_system-$(PLATFORM_MODIFIER)/configuration/$(PROJECT_NAME)",
@@ -1735,6 +1742,11 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				STRIP_INSTALLED_PRODUCT = NO;
+				SYSTEM_HEADER_SEARCH_PATHS = (
+					"$(WorkspaceDir)/operating_system/operating_system-$(PLATFORM_MODIFIER)/include",
+					"$(WorkspaceDir)/port/include",
+					"$(WorkspaceDir)/source/app/include",
+				);
 				USER_HEADER_SEARCH_PATHS = (
 					"$(WorkspaceDir)/operating_system/operating_system-$(PLATFORM_MODIFIER)/configuration",
 					"$(WorkspaceDir)/operating_system/operating_system-$(PLATFORM_MODIFIER)/configuration/$(PROJECT_NAME)",
