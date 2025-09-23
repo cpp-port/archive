@@ -410,9 +410,6 @@
     <ClCompile Include="archive\libarchive\xxhash.c">
       <Filter>Source Files\archive</Filter>
     </ClCompile>
-    <ClCompile Include="archive\libarchive_fe\err.c">
-      <Filter>Source Files\archive_fe</Filter>
-    </ClCompile>
     <ClCompile Include="archive\libarchive_fe\line_reader.c">
       <Filter>Source Files\archive_fe</Filter>
     </ClCompile>
@@ -448,6 +445,9 @@
     </ClCompile>
     <ClCompile Include="archive\libarchive\archive_parse_date.c">
       <Filter>Source Files\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="archive\libarchive_fe\lafe_err.c">
+      <Filter>Source Files\archive_fe</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
