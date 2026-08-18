@@ -1323,6 +1323,7 @@
     <ClCompile Include="archive\libarchive\filter_fork_windows.c" />
     <ClCompile Include="archive\libarchive\xxhash.c" />
     <ClCompile Include="archive\libarchive_fe\lafe_err.c" />
+    <ClCompile Include="archive\libarchive_fe\lafe_setmode.c" />
     <ClCompile Include="archive\libarchive_fe\line_reader.c" />
     <ClCompile Include="archive\libarchive_fe\passphrase.c" />
     <ClCompile Include="archive\tar\bsdtar.c" />
@@ -1333,6 +1334,7 @@
     <ClCompile Include="archive\tar\subst.c" />
     <ClCompile Include="archive\tar\util.c" />
     <ClCompile Include="archive\tar\write.c" />
+    <ClCompile Include="ntdll_crc32.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="config.h" />
