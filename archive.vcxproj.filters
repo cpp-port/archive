@@ -455,6 +455,9 @@
     <ClCompile Include="archive\libarchive_fe\lafe_setmode.c">
       <Filter>Source Files\archive_fe</Filter>
     </ClCompile>
+    <ClCompile Include="archive\libarchive\archive_umask.c">
+      <Filter>Source Files\archive</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="config.h">
