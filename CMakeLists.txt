@@ -59,7 +59,7 @@ set(ARCHIVE_SRCS
         archive/libarchive/archive_check_magic.c
         archive/libarchive/archive_cmdline.c
         archive/libarchive/archive_cmdline_private.h
-        archive/libarchive/archive_crc32.h
+        archive_crc32.h
         archive/libarchive/archive_cryptor.c
         archive/libarchive/archive_cryptor_private.h
         archive/libarchive/archive_digest.c
