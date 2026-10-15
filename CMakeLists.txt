@@ -1,6 +1,56 @@
 cmake_minimum_required(VERSION 3.16)
 project(archive C)
 
+if(__REACTOS__)
+    set(PORT_SOURCE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/archive")
+    set(ZLIB_INCLUDE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/../zlib/include")
+    set(ZLIB_LIBRARY zlib)
+    # The in-tree zlib has a known cdecl DLL ABI. Its target is unavailable
+    # in libarchive's isolated try_compile projects, so supply that ABI directly.
+    set(ZLIB_WINAPI 0 CACHE INTERNAL "In-tree zlib uses cdecl" FORCE)
+    set(ZLIB_DLL 1 CACHE INTERNAL "In-tree zlib is shared" FORCE)
+    set(ZLIB_WINAPI_WITH_LIB zlib CACHE INTERNAL "In-tree zlib target" FORCE)
+    set(ZLIB_DLL_WITH_LIB zlib CACHE INTERNAL "In-tree zlib target" FORCE)
+    # Keep CTest defaults local to the library instead of enabling ca2 tests.
+    set(BUILD_TESTING OFF)
+    set(BUILD_SHARED_LIBS ON CACHE BOOL "" FORCE)
+    set(WINDOWS_VERSION "XP" CACHE STRING "" FORCE)
+    set(ENABLE_ZLIB ON CACHE BOOL "" FORCE)
+    foreach(feature IN ITEMS WERROR INSTALL TEST TAR CPIO CAT UNZIP OPENSSL MBEDTLS
+        NETTLE MD LIBB2 LZ4 LZO LZMA ZSTD BZip2 LIBXML2 BSDXML EXPAT WIN32_XMLLITE
+        PCREPOSIX PCRE2POSIX CNG ICONV)
+        set(ENABLE_${feature} OFF CACHE BOOL "" FORCE)
+    endforeach()
+    add_compile_definitions(__REACTOS__ NTDDI_VERSION=0x05010000 _WIN32_WINNT=0x0501 WINVER=0x0501)
+    add_subdirectory("${PORT_SOURCE_DIR}" upstream EXCLUDE_FROM_ALL)
+    # Generate an outer copy rather than modifying the vendored implementation.
+    set_property(DIRECTORY APPEND PROPERTY CMAKE_CONFIGURE_DEPENDS "${PORT_SOURCE_DIR}/libarchive/archive_windows.c")
+    file(READ "${PORT_SOURCE_DIR}/libarchive/archive_windows.c" windows_source)
+    string(REPLACE "_wsopen_s" "ca2_wsopen_s" windows_source "${windows_source}")
+    file(GENERATE OUTPUT "${CMAKE_CURRENT_BINARY_DIR}/archive_windows_compat.c" CONTENT "#include \"${CMAKE_CURRENT_SOURCE_DIR}/archive_wsopen_compat.h\"\n${windows_source}")
+    set_source_files_properties("${CMAKE_CURRENT_BINARY_DIR}/archive_windows_compat.c" PROPERTIES GENERATED TRUE)
+    foreach(archive_target IN ITEMS archive archive_static)
+        get_target_property(archive_sources ${archive_target} SOURCES)
+        list(FILTER archive_sources EXCLUDE REGEX "(^|/)archive_random\\.c$")
+        list(FILTER archive_sources EXCLUDE REGEX "(^|/)archive_windows\\.c$")
+        set_property(TARGET ${archive_target} PROPERTY SOURCES ${archive_sources})
+        target_sources(${archive_target} PRIVATE "${CMAKE_CURRENT_BINARY_DIR}/archive_windows_compat.c")
+        target_sources(${archive_target} PRIVATE "${CMAKE_CURRENT_SOURCE_DIR}/archive_random.c")
+        target_include_directories(${archive_target} PRIVATE "${PORT_SOURCE_DIR}/libarchive")
+        target_include_directories(${archive_target} BEFORE PRIVATE "${CMAKE_CURRENT_BINARY_DIR}/../zlib")
+        get_target_property(archive_libraries ${archive_target} LINK_LIBRARIES)
+        list(FILTER archive_libraries EXCLUDE REGEX "^bcrypt$")
+        set_property(TARGET ${archive_target} PROPERTY LINK_LIBRARIES ${archive_libraries})
+        target_link_libraries(${archive_target} advapi32)
+    endforeach()
+    set_target_properties(archive_static PROPERTIES EXCLUDE_FROM_ALL TRUE)
+    set_target_properties(archive PROPERTIES EXCLUDE_FROM_ALL FALSE PREFIX "" OUTPUT_NAME archive VERSION "" SOVERSION "")
+    install(TARGETS archive RUNTIME DESTINATION binary ARCHIVE DESTINATION library)
+    install(FILES "${PORT_SOURCE_DIR}/libarchive/archive.h" "${PORT_SOURCE_DIR}/libarchive/archive_entry.h" DESTINATION include)
+
+    return()
+endif()
+
 #set(VERSION "1.2.11")
 
 #option(ASM686 "Enable building i686 assembly implementation")
