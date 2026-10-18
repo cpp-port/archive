@@ -1323,6 +1323,7 @@
     <ClCompile Include="archive\libarchive\filter_fork_posix.c" />
     <ClCompile Include="archive\libarchive\filter_fork_windows.c" />
     <ClCompile Include="archive\libarchive\xxhash.c" />
+    <ClCompile Include="archive\libarchive_fe\lafe_explicit_bzero.c" />
     <ClCompile Include="archive\libarchive_fe\lafe_err.c" />
     <ClCompile Include="archive\libarchive_fe\lafe_setmode.c" />
     <ClCompile Include="archive\libarchive_fe\line_reader.c" />
