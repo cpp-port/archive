@@ -493,6 +493,12 @@
 		9AD7BC092B5775C800CC2D56 /* line_reader.c in Sources */ = {isa = PBXBuildFile; fileRef = 9AD7BC022B5775C700CC2D56 /* line_reader.c */; };
 		9AD7BC0B2B5775D200CC2D56 /* passphrase.c in Sources */ = {isa = PBXBuildFile; fileRef = 9AD7BBFE2B5775C600CC2D56 /* passphrase.c */; };
 		9AD7BC0C2B5775D200CC2D56 /* line_reader.c in Sources */ = {isa = PBXBuildFile; fileRef = 9AD7BC022B5775C700CC2D56 /* line_reader.c */; };
+		8E844937590546DDB747E361 /* archive_crc32.c in Sources */ = {isa = PBXBuildFile; fileRef = BDF4C4F339CF492A92AF7BA6 /* archive_crc32.c */; };
+		8C4ED0FC933E4236BE06CDC8 /* archive_crc32.c in Sources */ = {isa = PBXBuildFile; fileRef = BDF4C4F339CF492A92AF7BA6 /* archive_crc32.c */; };
+		01834A97A1F749D5921BB5F5 /* archive_crc32.c in Sources */ = {isa = PBXBuildFile; fileRef = BDF4C4F339CF492A92AF7BA6 /* archive_crc32.c */; };
+		44E20140610D4A26B80799AF /* archive_umask.c in Sources */ = {isa = PBXBuildFile; fileRef = FEE827E03BBD46549250AA4A /* archive_umask.c */; };
+		D2235EFEEA1046FB9E4889AF /* archive_umask.c in Sources */ = {isa = PBXBuildFile; fileRef = FEE827E03BBD46549250AA4A /* archive_umask.c */; };
+		EDA98AFFBFCF48A98AE2B392 /* archive_umask.c in Sources */ = {isa = PBXBuildFile; fileRef = FEE827E03BBD46549250AA4A /* archive_umask.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -690,6 +696,8 @@
 		9AD7BC002B5775C700CC2D56 /* passphrase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = passphrase.h; sourceTree = "<group>"; };
 		9AD7BC012B5775C700CC2D56 /* line_reader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = line_reader.h; sourceTree = "<group>"; };
 		9AD7BC022B5775C700CC2D56 /* line_reader.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = line_reader.c; sourceTree = "<group>"; };
+		BDF4C4F339CF492A92AF7BA6 /* archive_crc32.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = archive_crc32.c; sourceTree = "<group>"; };
+		FEE827E03BBD46549250AA4A /* archive_umask.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = archive_umask.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -868,6 +876,8 @@
 				9ACF5F572D9BD81E002033DF /* archive_time.c */,
 				9ACF5F582D9BD81E002033DF /* archive_time_private.h */,
 				9AD7BA3B2B57751500CC2D56 /* archive_util.c */,
+				FEE827E03BBD46549250AA4A /* archive_umask.c */,
+				BDF4C4F339CF492A92AF7BA6 /* archive_crc32.c */,
 				9AD7BAC32B57752A00CC2D56 /* archive_version_details.c */,
 				9AD7BA9D2B57752300CC2D56 /* archive_virtual.c */,
 				9AD7BA822B57751F00CC2D56 /* archive_windows.h */,
@@ -1268,6 +1278,8 @@
 				9AD7BB092B57752D00CC2D56 /* archive_read_support_filter_grzip.c in Sources */,
 				9AD7BB1C2B57752D00CC2D56 /* archive_entry_copy_bhfi.c in Sources */,
 				9AD7BAE52B57752C00CC2D56 /* archive_util.c in Sources */,
+				D2235EFEEA1046FB9E4889AF /* archive_umask.c in Sources */,
+				8C4ED0FC933E4236BE06CDC8 /* archive_crc32.c in Sources */,
 				9AD7BAE82B57752C00CC2D56 /* archive_write_open_memory.c in Sources */,
 				9AD7BB762B57752D00CC2D56 /* archive_read_support_filter_none.c in Sources */,
 				9AD7BB242B57752D00CC2D56 /* archive_read_support_format_7zip.c in Sources */,
@@ -1391,6 +1403,8 @@
 				9AD7BBB62B57759100CC2D56 /* archive_check_magic.c in Sources */,
 				9AD7BB952B57759100CC2D56 /* archive_write_disk_windows.c in Sources */,
 				9AD7BBDC2B57759100CC2D56 /* archive_util.c in Sources */,
+				EDA98AFFBFCF48A98AE2B392 /* archive_umask.c in Sources */,
+				01834A97A1F749D5921BB5F5 /* archive_crc32.c in Sources */,
 				9AD7BB852B57759000CC2D56 /* archive_read_support_format_cpio.c in Sources */,
 				9AD7BBA42B57759100CC2D56 /* archive_write_open_filename.c in Sources */,
 				9AD7BBD52B57759100CC2D56 /* archive_write_set_format_pax.c in Sources */,
@@ -1548,6 +1562,8 @@
 				9AC1071A2B6ACABE0053DB45 /* archive_read_support_filter_grzip.c in Sources */,
 				9AC1071B2B6ACABE0053DB45 /* archive_entry_copy_bhfi.c in Sources */,
 				9AC1071C2B6ACABE0053DB45 /* archive_util.c in Sources */,
+				44E20140610D4A26B80799AF /* archive_umask.c in Sources */,
+				8E844937590546DDB747E361 /* archive_crc32.c in Sources */,
 				9AC1071D2B6ACABE0053DB45 /* archive_write_open_memory.c in Sources */,
 				9AC1071E2B6ACABE0053DB45 /* archive_read_support_filter_none.c in Sources */,
 				9AC1071F2B6ACABE0053DB45 /* archive_read_support_format_7zip.c in Sources */,

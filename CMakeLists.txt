@@ -214,6 +214,8 @@ set(ARCHIVE_SRCS
         archive/libarchive/archive_string_sprintf.c
         archive/libarchive/archive_time.c
         archive/libarchive/archive_time_private.h
+        archive/libarchive/archive_crc32.c
+        archive/libarchive/archive_umask.c
         archive/libarchive/archive_util.c
         archive/libarchive/archive_version_details.c
         archive/libarchive/archive_virtual.c
